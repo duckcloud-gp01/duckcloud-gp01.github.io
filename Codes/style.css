@@ -1,5 +1,28 @@
-body{
+@import url('https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: "Montserrat", sans-serif;
-    
+    font-size: 1rem;
+    color: white;
+
+
 }
+
+:root {
+    /* Name = Fitjourney */
+    --primary_color : #C4D07C ;
+    --primary_color_transparent: #C4D07C7b;
+    --secondary_color: #E7826F ;
+    --primary_font : "Montserrat", sans-serif;
+    --secondary_font: "Roboto", sans-serif ;
+    --logo_font:  "Monsieur La Doulaise", cursive;
+
+}
+
+
+
+
