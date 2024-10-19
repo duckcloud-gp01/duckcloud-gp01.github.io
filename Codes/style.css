@@ -101,6 +101,9 @@ body {
   display: flex;
   flex-direction: column;
   gap: 0.4rem;
+  margin-bottom: 1.5rem;
+  
+
   
 }
 
@@ -114,6 +117,14 @@ body {
 
 .booking-card .features li::marker {
   color: var(--secondary_color);
+}
+
+.booking-card .price {
+  font-size: 1.8rem;
+  font-weight: bold;
+  font-family: var(--secondary_font);
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--deep_green_color);
 }
 
 .booking-card .btn {
