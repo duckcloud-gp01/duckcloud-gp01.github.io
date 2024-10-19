@@ -1,28 +1,138 @@
-@import url('https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Montserrat", sans-serif;
-    font-size: 1rem;
-    color: white;
-
-
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 1rem;
 }
 
 :root {
-    /* Name = Fitjourney */
-    --primary_color : #C4D07C ;
-    --primary_color_transparent: #C4D07C7b;
-    --secondary_color: #E7826F ;
-    --primary_font : "Montserrat", sans-serif;
-    --secondary_font: "Roboto", sans-serif ;
-    --logo_font:  "Monsieur La Doulaise", cursive;
+  /* Name = Fitjourney */
+  --primary_color: #c4d07c;
+  --primary_color_transparent: #c4d07c7b;
+  --secondary_color: #e7826f;
+  --deep_green_color: #001704;
+  --primary_font: "Montserrat", sans-serif;
+  --secondary_font: "Roboto", sans-serif;
+  --logo_font: "Monsieur La Doulaise", cursive;
+}
 
+body {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+
+}
+
+.container {
+  width: 100%;
+  padding: 0 5rem;
+}
+
+#bookingSection {
+  padding: 5rem 0;
+  background-color: var(--deep_green_color);
+}
+
+.booking {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.booking-title {
+  font: normal small-caps bold 3rem var(--secondary_font);
+  color: var(--primary_color);
+  margin-bottom: 1rem;
+}
+
+.booking-info {
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+  margin-bottom: 2.5rem;
+  
+}
+
+.booking-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.booking-card .col {
+  width: 25rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  background-color: white;
+  border: 4px solid var(--secondary_color);
+  border-radius: 20px;
+  color: var(--deep_green_color);
+  font-family: var(--secondary_font);
+  
+}
+
+.booking-card .title {
+  font-size: 1.4rem;
+  font-variant: small-caps;
+  letter-spacing: .1rem;
+  
+}
+
+.booking-card .description {
+  font-family: var(--primary_font);
+
+}
+
+.booking-card .plan-title {
+  font-size: 1.1rem;
+  color: var(--secondary_color);
+  margin-bottom: .5rem;
+
+
+}
+
+.booking-card .features {
+  padding: 0 0 0 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  
+}
+
+.booking-card .features li {
+  font-size: .9rem;
+  font-weight: 500;
+  letter-spacing: .02rem;
 }
 
 
 
+.booking-card .features li::marker {
+  color: var(--secondary_color);
+}
+
+.booking-card .btn {
+  border: 2px solid var(--secondary_color);
+  border-radius: 10px;
+  background-color: var(--secondary_color);
+  padding: .5rem ;
+  color: white;
+  cursor: pointer;
+}
+
+.booking-card .btn:hover{
+  border: 2px solid var(--secondary_color);
+  background-color: white;
+  color: var(--secondary_color);
+}
+
+.booking-card .btn:active {
+  transform: scale(.95, .95);
+  transition: transform .1s;
+}
 
