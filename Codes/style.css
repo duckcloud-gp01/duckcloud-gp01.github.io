@@ -8,8 +8,9 @@
     font-family: "Montserrat", sans-serif;
     font-size: 1rem;
     color: white;
-
-
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
 }
 
 :root {
@@ -23,6 +24,55 @@
 
 }
 
+/* Home Page */
 
-
-
+header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    padding: 22px 8%;
+    width: 100%;
+    background-color: #0000004e;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 0px 3px 0px;
+}
+.navbar .logo{
+    font-size: 2rem;
+    font-weight: bold;
+}
+header .navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .tags{
+    display: flex;
+}
+.navbar .tags a{
+    margin-right: 30px;
+    font-weight: 600;
+    transition: 0.4s;
+}
+.navbar .contact{
+    background-color: var(--secondary_color);
+    padding: 8px 20px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+.navbar ul a:hover{
+    color: var(--secondary_color);
+}
+.navbar .contact:hover{
+    background-color: transparent;
+    border: 1px solid #ffffff;
+}
+.home-slider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home-slider img{
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+}
