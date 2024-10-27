@@ -13,39 +13,40 @@
 }
 body{
     overflow-x: hidden;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--secondary_font);
     font-size: 1rem;
-    color: white;
-    box-sizing: border-box;
-
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-size: 1rem;
+    color: var(--deep_green_color);
+    background-color: var(--light_background_color);
 
 }
   
     
 
 :root {
-  /* Name = Fitjourney */
-  --primary_color: #c4d07c;
-  --primary_color_transparent: #c4d07c7b;
-  --secondary_color: #e7826f;
-  --deep_green_color: #001704;
-  --primary_font: "Montserrat", sans-serif;
-  --secondary_font: "Roboto", sans-serif;
-  --logo_font: "Monsieur La Doulaise", cursive;
+    
+        /* Updated Color Palette for Fitjourney */
+        --primary_color: #FF6F61; /* Coral for accents */
+        --primary_color_transparent: rgba(255, 111, 97, 0.7); /* Transparent Coral */
+        --secondary_color: #FF6F61; /* Keep your secondary color */
+        --deep_green_color: #2C3E50; /* Darker deep green for text */
+        --light_background_color: #F0FFF0; /* Light Mint Green */
+        --primary_font: "Montserrat", sans-serif; /* Header font */
+        --secondary_font: "Roboto", sans-serif; /* Body font */
+    
 }
 
-body {
-  color: white;
-  font-family: "Montserrat", sans-serif;
-
+h1, h2, h3, h4, h5, h6 {
+    color: var(--deep_green_color); /* Maintain consistency in heading colors */
+    font-family: var(--primary_font); /* Use Montserrat for headers */
 }
+
+button {
+    background-color: var(--primary_color);
+    color: white; /* Use white text on buttons for contrast */
+}
+
+
+
 
 .container {
   width: 100%;
@@ -151,9 +152,17 @@ header{
     
     
 }
+
+#logonobg{
+    width: 50px;
+    
+}
 .navbar .logo{
     font-size: 2rem;
     font-weight: bold;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.2rem;
 }
 header .navbar{
     display: flex;
@@ -332,7 +341,7 @@ header .navbar{
  
 
 .may {
-  background-color: black;
+  
   max-height: 100vh;
   font-family: var(--secondary_font);
   margin: 3em;
@@ -380,7 +389,7 @@ h1 {
 /* Styling paragraphs */
 .para-1,
 .para-2 {
-  font-size: 15px;
+  font-size: 1rem;
   line-height: 1.6;
   margin-bottom: 20px;
 }
@@ -434,7 +443,7 @@ h1 {
 /* service-header section (Leon's Service Section) */
 
 .leon {
-    color:black;
+    color:#222222;
     font-family: "Montserrat", sans-serif;
     background-color: var(--primary_bg_color);
   
@@ -570,6 +579,7 @@ h1 {
     flex-wrap: wrap;
     gap: 2rem;
     margin-top: 3rem;
+    margin-bottom: 5rem;
 }
 
 .healthy-text {
@@ -634,7 +644,8 @@ h1 {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: var(--primary_color_transparent);
+    background-color: rgba(255, 255, 255, 0.378);
+    
 }
 
 /* .container {
