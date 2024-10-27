@@ -1,28 +1,117 @@
-@import url('https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Montserrat", sans-serif;
-    font-size: 1rem;
-    color: white;
-
-
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  color: white;
 }
 
 :root {
-    /* Name = Fitjourney */
-    --primary_color : #C4D07C ;
-    --primary_color_transparent: #C4D07C7b;
-    --secondary_color: #E7826F ;
-    --primary_font : "Montserrat", sans-serif;
-    --secondary_font: "Roboto", sans-serif ;
-    --logo_font:  "Monsieur La Doulaise", cursive;
-
+  /* Name = Fitjourney */
+  --primary_color: #c4d07c;
+  --primary_color_transparent: #c4d07c7b;
+  --secondary_color: #e7826f;
+  --primary_font: "Montserrat", sans-serif;
+  --secondary_font: "Roboto", sans-serif;
+  --logo_font: "Monsieur La Doulaise", cursive;
 }
 
+body {
+  background-color: black;
+  max-height: 100vh;
+  font-family: var(--secondary_font);
+  margin: 3em;
+  padding: 0;
+  display: flex;
+}
 
+#left-side {
+  width: 30%;
+  padding: 20px;
+  letter-spacing: 3px;
+}
+#left-side li::marker {
+  color: var(--secondary_color);
+  font-size: 1.6em;
+}
 
+#left-side h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
 
+#ride-side {
+  width: 70%;
+  margin-right: 5em;
+  padding: 20px;
+  height: auto;
+}
+
+h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+  letter-spacing: 1.5px;
+  span {
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+}
+
+.arch-color {
+  color: var(--secondary_color);
+}
+
+/* Styling paragraphs */
+.para-1,
+.para-2 {
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* About images section */
+#about-images {
+  display: flex;
+  justify-content: space-around;
+  height: 40%;
+}
+
+#about-images span {
+  text-align: center;
+  /* border: 1px solid white; */
+  /* border-radius: 50%; */
+}
+
+#about-images img {
+  width: 10em;
+  height: 8em;
+  margin: 10px;
+  /* border-radius:10px; */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+
+  #left-side,
+  #ride-side {
+    width: 100%;
+  }
+
+  #about-images {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #about-images img {
+    margin-bottom: 20px;
+  }
+}
