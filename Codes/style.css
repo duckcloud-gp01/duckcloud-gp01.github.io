@@ -8,8 +8,12 @@
     font-family: "Montserrat", sans-serif;
     font-size: 1rem;
     color: white;
-
-
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+body{
+    overflow-x: hidden;
 }
 
 :root {
@@ -23,6 +27,149 @@
 
 }
 
+/* Home Page */
+
+header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    padding: 22px 8%;
+    width: 100%;
+    background-color: #0000004e;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 0px 3px 0px;
+    z-index: 100;
+}
+.navbar .logo{
+    font-size: 2rem;
+    font-weight: bold;
+}
+header .navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .tags{
+    display: flex;
+}
+.navbar .tags a{
+    margin-right: 30px;
+    font-weight: 600;
+    transition: 0.4s;
+}
+.navbar .contact{
+    background-color: var(--secondary_color);
+    padding: 8px 20px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+.navbar ul a:hover{
+    color: var(--secondary_color);
+}
+.navbar .contact:hover{
+    background-color: transparent;
+    border: 1px solid #ffffff;
+}
 
 
 
+/* Home Slider */
+.main {
+    height: 100vh;
+    width: 100%;
+  }
+  .wrapper,
+  .slide {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  .wrapper{
+    width: 300%;
+    display: flex;
+  }
+  .slide {
+    overflow: hidden;
+    animation: slides 16s infinite;
+  }
+  .slide::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 10;
+  }
+  .slide .image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  .slide .image-data {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+    z-index: 100;
+  }
+  .image-data span.text {
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+  }
+  .image-data h2, .massage-content{
+    font-size: 30px;
+    font-weight: 600;
+    color: #fff;
+  }
+  .slide-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 25px;
+    color: #333;
+    background: #fff;
+    text-decoration: none;
+    margin-top: 25px;
+    transition: all 0.3s ease;
+  }
+  .slide-btn:hover {
+    color: #fff;
+    background-color: var(--secondary_color);
+  }
+
+
+  /* Home Slide Animation */
+  @keyframes slides{
+    0%{
+        transform: translateX(0%);
+    }
+    25%{
+        transform: translateX(0%);
+    }
+    30%{
+        transform: translateX(-100%);
+    }
+    50%{
+        transform: translateX(-100%);
+    }
+    55%{
+        transform: translateX(-200%);
+    }
+    75%{
+        transform: translateX(-200%);
+    }
+    80%{
+        transform: translateX(-200%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+
+
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+
+
+ 
