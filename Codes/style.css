@@ -178,16 +178,9 @@ header .navbar{
 
 
  
-  /* Name = Fitjourney */
-  --primary_color: #c4d07c;
-  --primary_color_transparent: #c4d07c7b;
-  --secondary_color: #e7826f;
-  --primary_font: "Montserrat", sans-serif;
-  --secondary_font: "Roboto", sans-serif;
-  --logo_font: "Monsieur La Doulaise", cursive;
-}
+ 
 
-body {
+.may {
   background-color: black;
   max-height: 100vh;
   font-family: var(--secondary_font);
